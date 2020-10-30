@@ -28,6 +28,9 @@ li a {
   background: black;
 	
 }
+form, input, select, option{
+	background: white;
+}
 .table-title {
 	background: white;
 	border-radius: 50px;

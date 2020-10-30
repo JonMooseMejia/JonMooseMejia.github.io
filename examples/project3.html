@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project 3</title>
+<title>Number Checker and Area Checker</title>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="CSS/styles.css">
+	<script src="javascript/areacode.js"></script>
 </head>
 <body>
 	<nav class="nav">
@@ -18,12 +19,92 @@
 				<li class="nav_item"><a href="project5.html">Project 5</a></li>
 			</ul>
 		</nav>
-	<div class="container">
-	
+	<div class="container-parent">
+		<div class="container-child">
+			<!-- Firsst part of assignment-->
+<h1>Number Checker</h1>
+
+<form method="post" name="theForm" onsubmit="checkTheNumber(); return false;"> Enter a number: <input type="text" id="theNumber"/>
+  <br/>
+  <br/>
+  <input type="submit" value="Check the Number"/>
+</form>
+		</div>
+		<div class="container-child">
+		
+			
+			<!-- Second part of assignment-->
+			<h2>Select a City:</h2>
+
+<form action="AreaCodes.html" method="post" name="theForm"
+
+      onsubmit="checkTheCode(); return false;">
+
+  <select name="theCode" id="CODE">
+
+    <option value="">-- Select a City --</option>
+    <option value="617">Boston</option>
+    <option value="212">Manhattan</option>
+    <option value="415">San Francisco</option>
+    <option value="813">Tampa</option>
+
+  </select>
+  <br />
+  <br />
+
+  <input type="submit" value="Check the Area Code" />
+
+</form>
+		
+		</div>
 	</div>
-	
-	
-	
+
 	</body>
+	<!-- Second part of assignment-->
+	<script>
+	 function checkTheCode()
+    {
+      var msg = "";
+      var areaCode = document.getElementById("CODE").options[document.getElementById("CODE").selectedIndex].value;
+		
+      switch (parseInt(areaCode))
+      {
+        case 617:
+          msg = "Boston's area code is " + areaCode;
+    		break;
+        case 212:
+          msg = "Manhattan's area code is " + areaCode;
+    		break;
+        case 415:
+          msg = "San Francisco's area code is " + areaCode;
+    		break;
+        case 813:
+          msg = "Tampa's area code is " + areaCode;
+			break;
+		default:
+          msg = "You did not select a city.";
+      }
+      
+      alert(msg);
+
+    }
+	</script>
+	<!-- First part of assignment-->
+	<script>
+	    function checkTheNumber()
+    {
+      var num = document.getElementById("theNumber").value;
+      var msg = "";
+      
+      if (num >= 100)
+
+        msg = msg + "The number is greater than 100";
+		else 
+			msg = msg + "The number is less than 100";
+
+      alert(msg);
+    }
+
+	</script>
 
 </html>
