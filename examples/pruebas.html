@@ -1,26 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="Samples.css">
-    <title>Test Associative Arrays</title>
-</head>
-<body>
-    <div id="mainDiv">
-        <h3 style="text-align:center;">Testing Associative Arrays</h3>
-        <script type="text/javascript">
-            /* <![CDATA[ */
-            var myArray = new Array();
-            myArray["one"] = 100;
-            myArray["two"] = -1.35;
-            myArray["three"] = "Kangaroo";
+	<head>
+		<meta charset="utf-8">
+		<title>Canvas Resize</title>
+		<style type="text/css">
+			canvas {
+				border: 1px solid black;
+			}
+			body {
+				margin: 0;
+			}
 			
-            for (stuff in myArray) {
-                document.write("The value for izndex '" + stuff + "' is " + myArray[stuff] + "<br>");
-            }
-            document.write("The length property has a value of " + myArray.length);
-            /* ]]> */
-        </script>
-    </div>
-</body>
+		</style>
+	</head>
+	<body>
+		<canvas></canvas>
+		<h1>Hello</h1>
+	</body>
+	<script src="javascript/canvas2.js"></script>
 </html>

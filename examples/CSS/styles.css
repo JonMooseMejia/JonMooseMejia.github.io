@@ -41,6 +41,7 @@ form, input, select, option{
 nav {
 	padding: 0px 500px 0px 500px;
 	text-align: center;
+	position: relative;
 }
 nav ul {
 	list-style-type: none;
@@ -61,4 +62,18 @@ h1, p, button, h2, img, h3, h4 {
 .container-child {
 	background-color: transparent;
 	text-align: center;
+}
+.container-canvas canvas {
+	background: white;
+}
+.container-canvas {
+	height: 500px;
+	width: 1504px;
+	position: relative;
+	background: white;
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }

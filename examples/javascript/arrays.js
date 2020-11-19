@@ -8,3 +8,4 @@
 			for (var i = 0; i < person.length; i++) {
 				document.getElementById(i).innerHTML = person[i];
 			}
+	document.getElementById("title").innerHTML = "Thank you for your information! You supplied this information:";
