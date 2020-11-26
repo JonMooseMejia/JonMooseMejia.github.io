@@ -3,7 +3,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-	background-color: #011627;
+	
 }
 body {
 	font-size: 16px;
@@ -11,6 +11,7 @@ body {
 	line-height: 1.6;
 	height: 100%;
 	width: 100%;
+	background-color: #6110ef;
 }
 
 li {
@@ -77,3 +78,17 @@ h1, p, button, h2, img, h3, h4 {
     margin-right: auto;
     display: block;
 }
+#buttonStuff {
+	height: 29px;
+}
+button { 
+    margin: 0 0 10px 0;
+ }
+ #funStuff {
+		background: white;
+ }
+ .wrapper {
+	width: 800px;
+	margin: 0 auto; 
+	position: relative; 
+ }
