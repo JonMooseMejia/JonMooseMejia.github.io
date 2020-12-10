@@ -12,8 +12,11 @@ body {
 	height: 100%;
 	width: 100%;
 	background-color: #6110ef;
+	font-family: 'Raleway', sans-serif;;
 }
-
+.body {
+	font-size: 16px;
+}
 li {
 	display: inline-block;
 	margin: 0px 50px 0 50px;
@@ -58,7 +61,7 @@ h1, p, button, h2, img, h3, h4 {
 	border-radius: 25px;
 	margin: 0 300px 100px 300px;
 	height: 100%;
-	max-width: 100%;
+
 }
 .container-child {
 	background-color: transparent;
@@ -92,3 +95,57 @@ button {
 	margin: 0 auto; 
 	position: relative; 
  }
+ .wrapper-inside {
+
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: relative; 
+ }
+
+
+/* Form styles */
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+  
+	#submitboton {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  #submitboton:hover {
+	background-color: #45a049;
+  }
+  
+  .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+  
+  /*jquery hidden*/
+
+  .initiallyHidden {
+	visibility: hidden;
+	position: absolute;
+	padding-left: 20px;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	background-color: black;
+	border-radius: 10px;
+	width: 200px;
+	color: white;
+	}

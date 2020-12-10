@@ -3,12 +3,15 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Project 6</title>
+	<title>Project 7</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="CSS/styles.css">
+	<style>
+	
+	  </style>
 </head>
-<body>
+<body class="body">
 	<nav class="nav">
 			<ul class="nav_list">
 				<li class="nav_item"><a href="../index.html">Home</a></li>
@@ -22,21 +25,29 @@
 			</ul>
 		</nav>
 		<div class="container-parent">
-				<div class="wrapper">
-				<h2>jQuery Intro Assignment</h2>
-				<div id="buttonStuff">
-					<button id="hide">Hide</button>
-					<button id="show">Show</button>
-				  </div>
-				  <div id="funStuff">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ligula urna. Mauris fringilla 
-					felis eu leo gravida ullamcorper. Integer lacinia commodo accumsan. Ut velit mi, luctus condimentum 
-					tincidunt quis, suscipit non lectus. Nunc enim sapien, facilisis sed sodales dignissim, ullamcorper 
-					quis nisl. Suspendisse sit amet justo ut sapien pellentesque.
-				  </div>
+			<div class="wrapper">
+				<div class="wrapper-inside">
+					<form id="simpleForm" action="http://www.frodriguez.net/PHPStuff/TestFormDataDelay.php" method="POST">
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					
+						<label for="lname">Message</label>
+						<input type="text" id="lname" name="message" placeholder="Message">
+						<div class="button-spacer">
+						<button onClick="Function()" type="submit" id="submitboton">Submit</button>
+						</div>
+					  </form>
+
+					</div>
+					<div class="initiallyHidden">
+							<h1>Loading...</h1>
+					</div>
 			</div>
-		  
+
 		</div>
 	</body>
-	<script src="javascript/app.js"></script>
+	<script src="javascript/form.js"></script>
 </html>
